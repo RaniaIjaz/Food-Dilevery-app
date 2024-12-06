@@ -10,7 +10,7 @@ export const StoreContextProvider = ({ children }) => {
   //console.log("cartItem:", cartItem);
 
   
-  const url = "https://food-dilevery-app-back-end.onrender.com"
+  const url = "https://food-dilevery-app-back-end.onrender.com/"
 
   const [token,setToken] = useState("")
 
