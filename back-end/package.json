@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "nodemon": "nodemon index"
+    "nodemon": "node index.js"
   },
   "author": "",
   "license": "ISC",
