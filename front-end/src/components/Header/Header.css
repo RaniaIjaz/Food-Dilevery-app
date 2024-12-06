@@ -1,0 +1,68 @@
+.header{
+    height: 34vw;
+    margin: 30px auto;
+    background: url('/header_img.png') no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.content{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 8%;
+    left: 6vw;
+    opacity: 0; /* Initially hide the content */
+    transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
+}
+
+.content h1{
+    font-size: 2.5vw;
+    color: white;
+}
+.content p{
+    font-size: 1.5vw;
+    color: white;
+}
+
+button{
+    background-color: white;
+    border: none;
+    width: 100px;
+    padding: 10px;
+    color: #023047;
+    font-size: 1.5vw;
+    border-radius: 20px;
+}
+
+
+.content.show {
+    opacity: 1; /* Show the content */
+}
+
+
+/*to make header portion responive*/
+
+@media (max-width:1050px) {
+   
+    .content{
+        max-width: 45%;
+    }
+}
+
+@media (max-width:750px) {
+    .content{
+        max-width: 65%;
+    }
+
+    .content p{
+        display: none;
+    }
+
+    .content button{
+        padding: 2vw 4vw;
+    }
+}

@@ -1,0 +1,156 @@
+.navbar{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-links{
+    display: flex;
+    list-style: none;
+    color: #023047;
+    font-size: 20px;
+    gap: 20px;
+}
+
+.navbar-links li{
+    cursor: pointer;
+}
+
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #023047 ;
+}
+
+.navbar-logo{
+    width: 130px;
+}
+.navbar-right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar-right button{
+    border-radius: 10px;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #d60664;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.navbar-right button:hover{
+    background-color: #ffe2e6;
+    border: 2px solid #d60664;
+}
+
+.navbar-search-icon{
+    font-size: 20px;
+    color: #023047;
+}
+
+.navbar-basket-icon{
+    font-size: 20px;
+    color: #023047;
+    transition: 3s;
+    position: relative;
+}
+
+.cart-indicator {
+    position: absolute;
+    top: -5px; /* Adjust as needed */
+    right: 0; /* Adjust as needed */
+    width: 10px; /* Adjust size as needed */
+    height: 10px; /* Adjust size as needed */
+    background-color: #d60664; /* Color of the dot */
+    border-radius: 50%;
+    border: 2px solid white; /* Optional: to add a border to the dot */
+  }
+
+  .navbar-profile{
+    position: relative;
+  }
+  .nav-profile-dropdown{
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+  }
+  .navbar-profile:hover .nav-profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    background-color: #fff2ef;
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: 1px solid #d60664;
+    outline: 2px solid white;
+    list-style: none;
+  }
+
+  .nav-profile-dropdown li{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+  }
+
+  .nav-profile-dropdown  img{
+    width: 20px;
+  }
+
+  .nav-profile-dropdown li:hover{
+    color: #d60664;
+  }
+
+/*To make our website loog good/responsive on phones*/
+
+@media (max-width:1050px) {
+    .navbar .navbar-logo{
+        width: 140px;
+    }
+
+    .navbar-links{
+        gap: 20px;
+        font-size: 17px;
+    }
+    .navbar-right{
+        gap: 30px;
+    }
+    .navbar-right img{
+        width: 22px;
+    }
+    .navbar-right button{
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width:900px) {
+    .navbar .navbar-logo{
+        width: 120px;
+    }
+
+    .navbar-links{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }
+    .navbar-right img{
+        width: 20px;
+    }
+    .navbar-right button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:750px) {
+
+    .navbar-links{
+        display: none;
+    }
+    
+}

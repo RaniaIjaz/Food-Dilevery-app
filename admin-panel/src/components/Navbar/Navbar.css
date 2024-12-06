@@ -1,0 +1,26 @@
+/* by .navbar we will have logo and h2 on left side and profile on right side */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+    
+}
+
+.logo {
+    /* width: 130px;
+    height: auto; */
+    width: max(10% , 80px);
+  }
+  
+  h2 {
+    /* margin-top: 1px; */
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .profile{
+    width: 60px;
+    
+  }
+
