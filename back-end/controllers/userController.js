@@ -4,8 +4,9 @@
 
 import userModel from "../models/userModel.js";
 import jwt from "jsonwebtoken"; //using it we will create authentication
-import bycrypt from "bcrypt";
+//import bycrypt from "bcrypt";
 import validator from "validator";
+import bycrypt from 'bcryptjs';
 
 
 //login User--------------------------------------------------------------------------------------
