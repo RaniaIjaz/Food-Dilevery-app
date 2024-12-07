@@ -12,7 +12,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 //Placing user Order from front-end---------------------------------
 const placeOrder = async (req,res)=>{
 
-    const frontEnd_url ="http://localhost:5173/"   //when we will deploy it online we will give the url of that frontend
+    const frontEnd_url ="https://food-dilevery-app-frontend.onrender.com/"   //when we will deploy it online we will give the url of that frontend
     //const conversionRate = 277; // Define the conversion rate from USD to PKR
 
 
